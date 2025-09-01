@@ -1,0 +1,161 @@
+/* General layout */
+body {
+  background-color: rgb(68, 66, 55);
+  font-family: 'Markazi Text', serif;
+  margin: 3rem 4%;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Header */
+header > img {
+  display: block;
+  margin: 0 auto;
+}
+
+header:hover {
+  box-shadow: 2px 4px 10px rgb(255, 0, 0);
+}
+
+/* Navigation */
+nav {
+  background-color: rgb(34, 28, 28);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem rgb(66, 62, 62);
+  margin: 1% 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgb(33, 27, 90);
+  color: rgb(223, 223, 231);
+}
+
+nav a:active {
+  background-color: rgb(208, 212, 224);
+  color: black;
+  font-weight: bold;
+}
+
+/* Promotional Banner */
+.banner {
+  background: url("back.jpeg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+/* Three columns section */
+.columns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.columns article {
+  flex: 1;
+  background-color: rgb(70, 71, 60);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.columns article:hover {
+  box-shadow: 2px 2px 10px rgb(8, 5, 5);
+}
+
+.columns img {
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 57, 50);
+  border-radius: 1rem;
+  color: rgb(200, 200, 200);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-right p:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .columns {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  nav li {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  nav li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .columns img {
+    width: 100px;
+    height: 100px;
+  }
+}
